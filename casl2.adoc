@@ -1,0 +1,41 @@
+== CASL2
+
+=== データ転送
+
+[source,casl2]
+----
+LD  GR0, A
+A   DC 3
+----
+[source,c]
+----
+int a = 3;
+int *tmp = &a;
+----
+
+=== 比較
+
+[source,casl2]
+----
+LD　GR0, A
+CPA GR0, B
+JPL JMP
+JMP RET
+A   DC 1
+B   DC 2
+----
+[source,c]
+----
+int A = 1;
+int B = 2;
+int *GR0 = &A;
+if (*GR0 > B) {
+    goto jmp;
+}
+jmp:
+
+// JMI = a < b
+// JNZ = a != b
+// JZE = a = b
+----
+

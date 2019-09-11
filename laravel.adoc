@@ -1,0 +1,13 @@
+== phpインストール
+sudo apt install php php-mbstring php-xml
+
+== Composerインストール
+=== エラーチェック
+curl -sS https://getcomposer.org/installer | php -- --check
+=== インストール
+curl -sS https://getcomposer.org/installer | php
+sudo mv composer.phar /usr/local/bin/composer
+
+== プロジェクトの作成
+「name」
+composer create-project laravel/laravel name 5.8

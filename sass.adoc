@@ -1,0 +1,11 @@
+sudo apt install gcc
+sudo apt install g++
+sudo apt install make
+npm install -g node-sass
+npm install gulp@3.9.1 -g
+
+
+npm init
+npm install --save-dev gulp
+npm install --save-dev gulp-sass gulp-autoprefixer gulp-cssmin browser-sync gulp-concat gulp-minify gulp-rename gulp-imagemin
+gulp mdb-go
