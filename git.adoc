@@ -14,3 +14,17 @@ git config --global user.name ユーザー名
 git config --global user.email メールアドレス
 ----
 
+=== バッファーを増やす
+
+[source,bash]
+----
+git config --global http.postBuffer 128M
+----
+
+=== SSL証明を回避する
+
+[source,bash]
+----
+git config --global http.sslVerify false
+----
+
