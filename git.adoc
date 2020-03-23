@@ -1,0 +1,16 @@
+== Git
+
+=== ユーザー名を設定する
+
+[source,bash]
+----
+git config --global user.name ユーザー名
+----
+
+=== ユーザー名を設定する
+
+[source,bash]
+----
+git config --global user.email メールアドレス
+----
+
