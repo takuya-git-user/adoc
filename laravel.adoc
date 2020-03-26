@@ -1,3 +1,11 @@
+:toc: left
+:toclevels: 5
+:sectnums:
+
+[%hardbreaks]
+
+= Laravel
+
 == phpインストール
 sudo apt install php php-mbstring php-xml
 

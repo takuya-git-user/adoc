@@ -1,3 +1,11 @@
+:toc: left
+:toclevels: 5
+:sectnums:
+
+[%hardbreaks]
+
+[source,bash]
+----
 sudo apt install gcc
 sudo apt install g++
 sudo apt install make
@@ -9,3 +17,4 @@ npm init
 npm install --save-dev gulp
 npm install --save-dev gulp-sass gulp-autoprefixer gulp-cssmin browser-sync gulp-concat gulp-minify gulp-rename gulp-imagemin
 gulp mdb-go
+----

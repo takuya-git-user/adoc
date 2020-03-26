@@ -1,0 +1,22 @@
+:toc: left
+:toclevels: 5
+:sectnums:
+
+[%hardbreaks]
+
+= モックアップ
+
+== LibreOffice
+
+=== プロジェクトURL
+https://ja.libreoffice.org/
+
+=== 本体ダウンロードURL
+https://ja.libreoffice.org/donate/dl/deb-x86_64/6.4.2/ja/LibreOffice_6.4.2_Linux_x86-64_deb.tar.gz
+
+=== モックアッププロジェクトURL
+https://extensions.libreoffice.org/extensions/gui-widget-prototyping
+
+=== プラグインダウンロードURL
+https://extensions.libreoffice.org/extensions/gui-widget-prototyping/0.1/@@download/file/widget.oxt
+

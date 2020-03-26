@@ -1,6 +1,12 @@
-== CASL2
+:toc: left
+:toclevels: 5
+:sectnums:
 
-=== データ転送
+[%hardbreaks]
+
+= CASL2
+
+== データ転送
 
 [source,casl2]
 ----
@@ -13,7 +19,7 @@ int a = 3;
 int *tmp = &a;
 ----
 
-=== 比較
+== 比較
 
 [source,casl2]
 ----
