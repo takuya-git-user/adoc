@@ -1,0 +1,80 @@
+:toc: left
+:toclevels: 5
+:sectnums:
+
+[%hardbreaks]
+
+= aptコマンド
+
+== リポジトリの更新
+
+[source, bash]
+----
+sudo apt update
+----
+
+== パッケージの更新
+
+[source, bash]
+----
+sudo apt upgrade
+----
+
+== インストール
+
+[source, bash]
+----
+sudo apt install name
+----
+
+== 再インストール
+
+[source, bash]
+----
+sudo apt --reinstall install name
+----
+
+== アンインストール
+
+設定ファイルが残る
+[source, bash]
+----
+sudo apt remove name
+----
+
+== 完全アンインストール
+
+設定ファイルが残らない
+[source, bash]
+----
+sudo apt purge name
+----
+
+== 不要な依存パッケージのアンインストール
+
+[source, bash]
+----
+sudo apt autoremove
+----
+
+== パッケージの検索
+
+[source, bash]
+----
+sudo apt search name
+----
+
+== インストールされていないキャッシュの削除
+
+[source, bash]
+----
+sudo apt autoclean
+----
+
+== 全てのキャッシュの削除
+
+[source, bash]
+----
+sudo apt clean
+----
+
