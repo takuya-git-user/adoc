@@ -1,0 +1,44 @@
+
+:toc: left
+:toclevels: 5
+:sectnums:
+
+[%hardbreaks]
+
+= DSNキャシング
+
+== インストール
+
+[source,bash]
+----
+sudo apt install dnsmasq
+----
+
+[source,bash]
+----
+sudo vim /etc/dnsmasq.conf
+----
+
+[source,bash]
+----
+# 19行目：コメント解除 (ドメイン名の無いクエリは上位サーバーに問い合わせない)
+
+domain-needed
+# 21行目：コメント解除 (プライベートIPの逆引き要求は上位サーバーに問い合わせない)
+
+bogus-priv
+# 53行目：コメント解除 (resolv.confに記述のサーバーに上から順に問い合わせる)
+
+strict-order
+# 67行目：もし必要であれば追記
+
+# 指定のドメインは指定のサーバーに問い合わせる
+
+# 下例の場合は [server.education] ドメインは [10.0.0.10] のサーバーに問い合わせる
+server=/server.education/10.0.0.10
+----
+
+[source,bash]
+----
+sudo systemctl restart dnsmasq
+----

@@ -1,0 +1,43 @@
+:toc: left
+:toclevels: 5
+:sectnums:
+
+[%hardbreaks]
+
+= GitLab
+
+== インストール
+
+=== 基本パッケージ
+
+[source,bash]
+----
+sudo apt update
+sudo apt install curl openssh-server ca-certificates
+----
+
+=== メールを送信する場合
+
+[source,bash]
+----
+sudo apt install postfix
+----
+
+=== GitLabのインストール
+
+[source,bash]
+----
+curl -sS https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.deb.sh | sudo bash
+sudo EXTERNAL_URL="http://localhost:9999" apt install gitlab-ce
+----
+
+Linux Mint19の場合はソフトウェアソースを編集する
+[source,bash]
+----
+#deb-src https://packages.gitlab.com/gitlab/gitlab-ce/linuxmint/ tricia main
+deb-src https://packages.gitlab.com/gitlab/gitlab-ce/ubuntu/ bionic main
+# deb https://packages.gitlab.com/gitlab/gitlab-ce/linuxmint/ tricia main
+deb https://packages.gitlab.com/gitlab/gitlab-ce/ubuntu/ bionic main
+
+sudo EXTERNAL_URL="http://localhost:9999" apt install gitlab-ce
+----
