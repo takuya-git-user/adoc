@@ -1,0 +1,18 @@
+:toc: left
+:toclevels: 5
+:sectnums:
+
+[%hardbreaks]
+
+= React
+
+== インストール
+
+npx create-react-app my-app --typescript
+
+
+== create-react-appで作ったReactアプリケーションがローカルサーバでしか動かない
+
+packege.jsonに下記を追加
+
+  "homepage": "./",
