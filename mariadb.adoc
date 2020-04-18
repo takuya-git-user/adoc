@@ -1,0 +1,8 @@
+JDBCクラスパス
+org.mariadb.jdbc.Driver
+
+
+sudo mysql -uroot -p localhost
+CREATE DATABASE mydb DEFAULT CHARACTER SET utf8mb4;
+CREATE USER 'user'@'localhost' IDENTIFIED BY 'passwd';
+GRANT ALL ON mydb.* TO 'user'@'localhost';
