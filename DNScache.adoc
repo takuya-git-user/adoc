@@ -35,10 +35,30 @@ strict-order
 # 指定のドメインは指定のサーバーに問い合わせる
 
 # 下例の場合は [server.education] ドメインは [10.0.0.10] のサーバーに問い合わせる
-server=/server.education/10.0.0.10
+# server=/server.education/10.0.0.10
 ----
 
 [source,bash]
 ----
 sudo systemctl restart dnsmasq
 ----
+
+LinuxにDNSを設定
+
+[source,bash]
+----
+sudo nvim /etc/systemd/resolved.conf
+----
+
+[source,resolved.conf]
+----
+#DNS
+DNS 127.0.0.1 1.1.1.1
+----
+
+[source,bash]
+----
+sudo systemctl restart systemd-resolved
+systemd-resolve --status
+----
+
