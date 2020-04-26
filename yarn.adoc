@@ -1,0 +1,80 @@
+:toc: left
+:toclevels: 5
+:sectnums:
+
+[%hardbreaks]
+
+= yarn
+
+nodeパッケージ管理
+
+== インストール
+
+[source,bash]
+----
+npm install -g yarn
+----
+
+== 新規プロジェクト
+
+[source,bash]
+----
+yarn init
+----
+
+== パッケージのグローバルインストール
+
+[source,bash]
+----
+yarn global add パッケージ名
+----
+
+
+== パッケージのインストール
+
+[source,bash]
+----
+yarn add パッケージ名
+----
+
+== 開発パッケージのインストール※テストなど
+
+[source,bash]
+----
+yarn add --dev パッケージ名
+----
+
+== 既存パッケージのインストール
+
+[source,bash]
+----
+yarn install
+----
+
+== マイナーバージョンアップ
+
+[source,bash]
+----
+yarn upgrade
+----
+
+== メジャーバージョンアップ
+
+[source,bash]
+----
+yarn upgrade --latest
+----
+
+== パッケージのアンインストール
+
+[source,bash]
+----
+yarn remove パッケージ名
+----
+
+== コマンド実行
+
+[source,bash]
+----
+yarn コマンド名
+----

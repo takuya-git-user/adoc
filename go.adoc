@@ -1,0 +1,19 @@
+:toc: left
+:toclevels: 5
+:sectnums:
+
+[%hardbreaks]
+
+= Go
+
+[source,.profile]
+----
+export PATH=$HOME/opt/go/bin:$PATH
+----
+
+[source,bash]
+----
+source ~/.profile
+go env
+----
+

@@ -1,0 +1,36 @@
+:toc: left
+:toclevels: 5
+:sectnums:
+
+[%hardbreaks]
+
+= node
+
+== インストール
+
+[source, bash]
+----
+mkdir ~/opt
+wget https://nodejs.org/dist/v12.16.2/node-v12.16.2-linux-x64.tar.xz
+tar -axvf node-v12.16.2-linux-x64.tar.xz node-v12.16.2-linux-x64/
+mv node-v12.16.2-linux-x64 node
+cd ~
+sudo vim .profile
+----
+
+[source, .profile]
+----
+export NODE_HOME=$HOME/opt/node
+export NODE_PATH=$NODE_HOME/lib/node_modules
+export PATH=$NODE_HOME/bin:$PATH
+----
+
+[source,bash]
+----
+source .profile
+----
+
+[source,bash]
+----
+npm install -g yarn
+----
